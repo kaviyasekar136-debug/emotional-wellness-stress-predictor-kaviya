@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+:root {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+/* Custom smooth styling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar for clean dashboard tables and panels */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d8b4fe80;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c084fc;
+}
+
+/* Breathing animation helper */
+@keyframes breathGlow {
+  0%, 100% {
+    transform: scale(0.92);
+    box-shadow: 0 0 20px 0 rgba(192, 132, 252, 0.25);
+  }
+  50% {
+    transform: scale(1.15);
+    box-shadow: 0 0 50px 15px rgba(167, 139, 250, 0.45);
+  }
+}
+
+.animate-breath {
+  animation: breathGlow 8s ease-in-out infinite;
+}

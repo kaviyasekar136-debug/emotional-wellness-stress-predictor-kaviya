@@ -1,0 +1,6 @@
+{
+  "name": "AI-Based Emotional Wellness & Stress Predictor",
+  "description": "A holistic mental wellness dashboard that analyzes daily mood, feelings, sleep, and workload using AI to classify stress levels, visualize weekly trends, and provide personalized relaxation routines.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
